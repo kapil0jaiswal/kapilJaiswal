@@ -1,0 +1,69 @@
+@keyframes circleMovement {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg) translate(100px) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg) translate(100px) rotate(-360deg);
+    }
+}
+
+@keyframes skew-pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    25% {
+        transform: scale(1.1) skew(10deg) skew(20deg);
+    }
+
+    50% {
+        transform: scale(1.1) skew(10deg) skew(20deg);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.profile {
+    width: 20vw;
+    height: 40vh;
+    animation: skew-pulse 8s infinite;
+    border-radius: 50%;
+}
+
+.animate-blob {
+    padding: 10em;
+    animation: circleMovement 5s linear infinite;
+    z-index: 0;
+}
+
+.devname {
+    color: var(--primary-text);
+    background-color: var(--background);
+    text-wrap: nowrap;
+    text-align: center;
+    padding-top: 2em;
+}
+
+.devdescription {
+    background-color: var(--background);
+    color: var(--secondary-text);
+    text-align: center;
+}
+
+.profile-container {
+    background-color: aliceblue;
+}
+.bg-card{
+    background-color: var(--foreground) !important;
+}
+.intro-message {
+    color: var(--primary-text);
+    text-align: center;
+    padding: 2em;
+}
+.socials{
+    padding: 2em;
+}

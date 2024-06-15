@@ -1,0 +1,68 @@
+::-webkit-scrollbar {
+    width: 5px;
+    opacity: 0; /* Hide scrollbar by default */
+    transition: opacity 0.3s; /* Add a transition for smooth hover effect */
+}
+/* Show scrollbar on hover */
+::-webkit-scrollbar:hover {
+    opacity: 1;
+    width: 7px;
+}
+::-webkit-scrollbar:focus {
+    opacity: 1;
+    width: 7px;
+}
+
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #fffdfd;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+ :root{
+    --background : #f6f6f6;
+    --foreground : #003fff;
+    --primary-text : #0a0a0a;
+    --secondary-text: #ffffff;
+    --toggle-bg : #f0eb9d;
+    --toggle-fg : #ffd000;
+ }
+ [data-theme="light"]{
+    --background : #8fc5f0;
+    --foreground : #fffffff2;
+    --primary-text : #ef9246;
+    --secondary-text: #eadec5;
+    --toggle-bg : #f0eb9d;
+    --toggle-fg : #ffd000;
+    --toggle-svg : url(./assets/Sun.svg);
+ }
+ [data-theme="dark"]{
+    --background : #0a0a0a;
+    --foreground : #3f59b9;
+    --primary-text : #f6f6f6;
+    --secondary-text: #807f7f;
+    --toggle-bg : #283452;
+    --toggle-fg : #00a6ff;
+    --toggle-svg : url(./assets/Moon.svg);
+}
+ body{
+    overflow-x: hidden;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.App{
+    width: 100vw;
+    height: auto;
+    overflow-y: auto;
+    background-color: var(--background);
+    z-index: -3;
+ }
