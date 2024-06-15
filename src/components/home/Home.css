@@ -1,10 +1,10 @@
 @keyframes circleMovement {
     0% {
-        transform: translate(-50%, -50%) rotate(0deg) translate(100px) rotate(0deg);
+        transform: rotate(0deg) translateX(10px) rotate(0deg);
     }
 
     100% {
-        transform: translate(-50%, -50%) rotate(360deg) translate(100px) rotate(-360deg);
+        transform:  rotate(360deg) translateY(10px) rotate(-360deg);
     }
 }
 
@@ -14,23 +14,40 @@
     }
 
     25% {
-        transform: scale(1.1) skew(10deg) skew(20deg);
+        transform: scale(1.1) ;
     }
 
     50% {
-        transform: scale(1.1) skew(10deg) skew(20deg);
+        transform: scale(1.1) ;
     }
 
     100% {
         transform: scale(1);
     }
 }
-
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes ripple-animation {
+    to {
+      transform: scale(4);
+      opacity: 0;
+    }
+}
 .profile {
-    width: 20vw;
-    height: 40vh;
-    animation: skew-pulse 8s infinite;
+    width: 50%;
+    height: 50%;
     border-radius: 50%;
+    background: rgba(255, 255, 255, 0.7);
+    transform: scale(0);
+    animation: circleMovement 8s infinite;
 }
 
 .animate-blob {
@@ -44,13 +61,14 @@
     background-color: var(--background);
     text-wrap: nowrap;
     text-align: center;
-    padding-top: 2em;
+    font-size: 2em;
 }
 
 .devdescription {
     background-color: var(--background);
     color: var(--secondary-text);
-    text-align: center;
+    padding-left: -10%;
+    animation:   slideIn 2s ease-out forwards; 
 }
 
 .profile-container {
