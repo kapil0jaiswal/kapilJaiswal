@@ -58,6 +58,7 @@
 }
 .bg-card{
     background-color: var(--foreground) !important;
+    margin-bottom: 100px;
 }
 .intro-message {
     color: var(--primary-text);
