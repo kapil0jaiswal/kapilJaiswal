@@ -24,7 +24,7 @@ export default function Skill() {
             </Col>
             <Col xs={12} md={3}>
               <a
-                href="https://wa.me/8359030051"
+                href="https://wa.me/+91-8359030051?text=Hi%20kapil%20visited%20your%20website%20wanna%20connect%3F%0A"
                 className="btn btn-default btn-lg"
               >
                 <i class="bi bi-whatsapp"></i>{" "}
