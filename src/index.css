@@ -33,19 +33,20 @@
     --toggle-fg : #ffd000;
  }
  [data-theme="light"]{
-    --background : #8fc5f0;
-    --foreground : #fffffff2;
+    --background : #f6f6f6;
+    --foreground : #ef9246;
     --primary-text : #ef9246;
-    --secondary-text: #eadec5;
-    --toggle-bg : #f0eb9d;
-    --toggle-fg : #ffd000;
+    --secondary-text: #484846;
+    --toggle-bg : #989595;
+    --toggle-fg : #686865;
     --toggle-svg : url(./assets/Sun.svg);
+    --gradient : linear-gradient(30deg, #ef9246 12%, transparent 12.5%, transparent 87%, #ef9246 87.5%, #ef9246), linear-gradient(150deg, #ef9246 12%, transparent 12.5%, transparent 87%, #ef9246 87.5%, #ef9246), linear-gradient(30deg, #ef9246 12%, transparent 12.5%, transparent 87%, #ef9246 87.5%, #ef9246), linear-gradient(150deg, #ef9246 12%, transparent 12.5%, transparent 87%, #ef9246 87.5%, #ef9246), linear-gradient(60deg, #ef924677 25%, transparent 25.5%, transparent 75%, #ef924677 75%, #ef924677), linear-gradient(60deg, #ef924677 25%, transparent 25.5%, transparent 75%, #ef924677 75%, #ef924677);
  }
  [data-theme="dark"]{
     --background : #0a0a0a;
-    --foreground : #3f59b9;
-    --primary-text : #f6f6f6;
-    --secondary-text: #807f7f;
+    --foreground : #ef9246;
+    --primary-text : #ef9246;
+    --secondary-text: #f6f6f6;
     --toggle-bg : #283452;
     --toggle-fg : #00a6ff;
     --toggle-svg : url(./assets/Moon.svg);

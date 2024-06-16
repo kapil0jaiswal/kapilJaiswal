@@ -1,29 +1,12 @@
-@keyframes circleMovement {
-    0% {
-        transform: rotate(0deg) translateX(10px) rotate(0deg);
-    }
-
-    100% {
-        transform:  rotate(360deg) translateY(10px) rotate(-360deg);
-    }
-}
-
-@keyframes skew-pulse {
-    0% {
-        transform: scale(1);
-    }
-
-    25% {
-        transform: scale(1.1) ;
-    }
-
-    50% {
-        transform: scale(1.1) ;
-    }
-
-    100% {
-        transform: scale(1);
-    }
+@keyframes figuremoving {
+    0%, 100% {
+        border-radius: 30% 70% 70% 30% / 30% 30% 70% 70% ;
+      }
+     25% { border-radius: 48% 52% 52% 48% / 62% 35% 65% 38% ;}
+     50% {
+        border-radius: 48% 52% 36% 64% / 45% 29% 71% 55% 
+      }
+     
 }
 @keyframes slideIn {
     from {
@@ -35,54 +18,111 @@
         opacity: 1;
     }
 }
-@keyframes ripple-animation {
-    to {
-      transform: scale(4);
-      opacity: 0;
-    }
-}
-.profile {
-    width: 50%;
-    height: 50%;
-    border-radius: 50%;
-    background: rgba(255, 255, 255, 0.7);
-    transform: scale(0);
-    animation: circleMovement 8s infinite;
-}
-
-.animate-blob {
-    padding: 10em;
-    animation: circleMovement 5s linear infinite;
-    z-index: 0;
-}
 
 .devname {
     color: var(--primary-text);
-    background-color: var(--background);
+    /* background-color: var(--background); */
     text-wrap: nowrap;
     text-align: center;
     font-size: 2em;
 }
 
 .devdescription {
-    background-color: var(--background);
+    /* background-color: var(--background); */
     color: var(--secondary-text);
     padding-left: -10%;
     animation:   slideIn 2s ease-out forwards; 
-}
-
-.profile-container {
-    background-color: aliceblue;
 }
 .bg-card{
     background-color: var(--foreground) !important;
     margin-bottom: 100px;
 }
 .intro-message {
-    color: var(--primary-text);
+    color: var(--secondary-text);
     text-align: center;
     padding: 2em;
 }
 .socials{
     padding: 2em;
 }
+/* testing profile  */
+  .profile-picture {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .profile-container{
+    content: '';
+    width: 70%;
+    height: 70%;
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70% ;
+    background: Radial-gradient(circle , var(--background)60%, var(--foreground));
+    z-index: 1;
+    animation: figuremoving  8s infinite;
+    margin-bottom: 5%;
+  }
+  .profile-picture:hover{
+    transform: scale(1.1);
+    filter: grayscale();
+  }
+  .appearscrabble{
+    position: relative;
+    padding: 5em;
+    border-radius: 25%;
+   
+  }
+  /* testing steam part */
+  
+#steam1 {
+    -webkit-animation: steam1 4s ease-out infinite;
+    animation: steam1 4s ease-out infinite;
+  }
+  
+  #steam3 {
+    -webkit-animation: steam1 4s ease-out 1s infinite;
+    animation: steam1 4s ease-out 1s infinite;
+  }
+  
+  @-webkit-keyframes steam1 {
+    0% {transform: translateY(0) translateX(0) scale(0.25); opacity: 0.2;}
+    100% {transform: translateY(-200px) translateX(-20px) scale(1); opacity: 0;}
+  }
+  
+  @keyframes steam1 {
+    0% {transform: translateY(0) translateX(0) scale(0.25); opacity: 0.2;}
+    100% {transform: translateY(-200px) translateX(-20px) scale(1); opacity: 0;}
+  }
+  
+  #steam2 {
+    -webkit-animation: steam2 4s ease-out 0.5s infinite;
+    animation: steam2 4s ease-out 0.5s infinite;
+  }
+  
+  #steam4 {
+    -webkit-animation: steam2 4s ease-out 1.5s infinite;
+    animation: steam2 4s ease-out 1.5s infinite;
+  }
+  
+  @-webkit-keyframes steam2 {
+    0% {transform: translateY(0) translateX(0) scale(0.25); opacity: 0.2;}
+    100% {transform: translateY(-200px) translateX(20px) scale(1); opacity: 0;}
+  }
+  
+  @keyframes steam2 {
+    0% {transform: translateY(0) translateX(0) scale(0.25); opacity: 0.2;}
+    100% {transform: translateY(-200px) translateX(20px) scale(1); opacity: 0;}
+  }
+  .steam {
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-color: var(--foreground);
+    margin-top: -75px;
+    margin-left: 75px;
+    z-index: 0;
+    opacity: 0;
+  }
