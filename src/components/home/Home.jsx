@@ -7,8 +7,7 @@ export default function Welcome() {
   return (
     <Container fluid>
       <Row
-        className="d-flex justify-content-center align-items-center "
-        style={{ height: "100vh" }}
+        className="d-flex justify-content-center align-items-center"
       >
         <Col
           xs={12}
