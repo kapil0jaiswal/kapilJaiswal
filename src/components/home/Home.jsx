@@ -1,5 +1,5 @@
 import React from "react";
-import profile from "../../assets/Kapil-Profile.png";
+import profile from "../../assets/kapilnew.png";
 import "./Home.css";
 import { Col, Container, Row } from "react-bootstrap";
 
