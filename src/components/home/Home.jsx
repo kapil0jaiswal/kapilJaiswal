@@ -3,7 +3,7 @@ import profile from "../../assets/kapilnew.png";
 import "./Home.css";
 import resumeLink from "../../assets/Resume.pdf";
 import { Button, Col, Container, Row } from "react-bootstrap";
-export default function Welcome() {
+export default function Home() {
   return (
     <Container fluid>
       <Row
