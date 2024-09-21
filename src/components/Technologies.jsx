@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import Skill from "./Skill/Skill";
+import Skill from "./skill/Skill.jsx";
 import { FaJava, FaReact, FaLeaf } from "react-icons/fa";
 import { MdOutlineMiscellaneousServices } from "react-icons/md";
 import { TbBrandReactNative } from "react-icons/tb";

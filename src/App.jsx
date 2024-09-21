@@ -1,7 +1,7 @@
 import useLocalStorage from "use-local-storage";
-import Toggle from "./components/toggle/Toggle";
+import Toggle from "./components/toggle/Toggle.jsx";
 import Home from "./components/home/Home.jsx";
-import AboutMe from "./components/AboutMe/AboutMe";
+import AboutMe from "./components/AboutMe/AboutMe.jsx";
 import Technologies from "./components/Technologies.jsx";
 import Footer from "./components/Footer/Footer.jsx";
 
