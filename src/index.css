@@ -32,7 +32,7 @@
     --toggle-bg : #f0eb9d;
     --toggle-fg : #ffd000;
  }
- [data-theme="light"]{
+ [data-bs-theme="light"]{
     --background : #f6f6f6;
     --foreground : #ef9246;
     --primary-text : #ef9246;
@@ -40,9 +40,10 @@
     --toggle-bg : #989595;
     --toggle-fg : #686865;
     --toggle-svg : url(./assets/Sun.svg);
-    --gradient : linear-gradient(30deg, #ef9246 12%, transparent 12.5%, transparent 87%, #ef9246 87.5%, #ef9246), linear-gradient(150deg, #ef9246 12%, transparent 12.5%, transparent 87%, #ef9246 87.5%, #ef9246), linear-gradient(30deg, #ef9246 12%, transparent 12.5%, transparent 87%, #ef9246 87.5%, #ef9246), linear-gradient(150deg, #ef9246 12%, transparent 12.5%, transparent 87%, #ef9246 87.5%, #ef9246), linear-gradient(60deg, #ef924677 25%, transparent 25.5%, transparent 75%, #ef924677 75%, #ef924677), linear-gradient(60deg, #ef924677 25%, transparent 25.5%, transparent 75%, #ef924677 75%, #ef924677);
+    --gradient : radial-gradient(circle, rgba(239,146,70,1) 35%, rgba(237,195,160,1) 100%);
+    --border-light :
  }
- [data-theme="dark"]{
+ [data-bs-theme="dark"]{
     --background : #0a0a0a;
     --foreground : #ef9246;
     --primary-text : #ef9246;

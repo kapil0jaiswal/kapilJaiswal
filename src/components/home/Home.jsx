@@ -1,8 +1,8 @@
 import React from "react";
 import profile from "../../assets/kapilnew.png";
 import "./Home.css";
-import { Col, Container, Row } from "react-bootstrap";
-
+import resumeLink from "../../assets/Resume.pdf";
+import { Button, Col, Container, Row } from "react-bootstrap";
 export default function Welcome() {
   return (
     <Container fluid>
@@ -15,21 +15,23 @@ export default function Welcome() {
           className="d-flex flex-column align-items-center justify-content-end py-5"
         >
           <div className="appearscrabble">
-            
             <h2 className="devdescription">Hi I am </h2>
             <h1 className="devname">KAPIL JAISWAL</h1>
             <h2 className="devdescription">Full stack Developer </h2>
-            <div class="steam" id="steam1">
+            <div className="steam" id="steam1">
               {" "}
             </div>
-            <div class="steam" id="steam2">
+            <div className="steam" id="steam2">
               {" "}
             </div>
-            <div class="steam" id="steam3">
+            <div className="steam" id="steam3">
               {" "}
             </div>
-            <div class="steam" id="steam4">
+            <div className="steam" id="steam4">
               {" "}
+            </div>
+            <div className="btnPrimary">
+            <a href={resumeLink} download="KapilJaiswal.pdf">   <Button > Download Resume </Button></a>
             </div>
           </div>
         </Col>

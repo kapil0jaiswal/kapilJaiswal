@@ -1,0 +1,68 @@
+.cardContainer{
+display: flex;
+align-items: center;
+justify-content: center; 
+height: fit-content !important;
+}
+.cardEx {
+   width: fit-content !important;
+   background-color: var(--background) !important;
+}
+
+
+
+.educationText{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    width: fit-content !important;
+}
+.educationText > li{
+    color: var(--primary-text);
+    margin: 1%;
+}
+
+.card {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Ensures shine stays within the card */
+    margin: 20px; /* Adds space between cards */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  /* .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  } */
+  
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -150%;
+    width: 50%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.4);
+    transform: skewX(-45deg);
+    transition: 0.7s;
+    z-index: 0;
+  }
+  
+  .card:hover::before {
+    left: 150%;
+  }
+  
+  .card-content {
+    position: relative;
+    z-index: 1; /* Keeps the text above the shine */
+    padding: 20px;
+    text-align: center;
+  }

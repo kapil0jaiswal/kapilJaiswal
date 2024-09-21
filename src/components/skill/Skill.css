@@ -1,0 +1,43 @@
+.skill-card {
+    width: 100%;  /* Full width in its parent container */
+    height: 100%;  /* Let Bootstrap's grid manage the height */
+    text-align: center;  /* Center the text */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Align content vertically */
+    align-items: center;     /* Align content horizontally */ 
+    padding: 10px 1px 10px 1px;
+    margin: 2%;    
+  }
+  
+  .icon-container {
+    margin-bottom: 10px;
+  }
+  
+  .iconsSkill {
+    max-width: 60px;
+    height: auto;
+     color: var(--secondary-text);
+  }
+  
+  .skill-title {
+    color: var(--primary-text);
+    font-weight: bold;
+    white-space: nowrap;      /* Prevent text breaking */
+    overflow: hidden;         /* Hide overflow if text is too long */ 
+    font-size: 1.2rem;  /* Responsive font size */
+    max-width: 100%;       /* You can adjust the font size for all screen sizes */
+  }
+
+/* Media Queries for responsive adjustments */
+@media (max-width: 768px) {
+    .skill-title {
+      font-size: 1rem; /* Smaller font size for tablets */
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .skill-title {
+      font-size: 0.9rem; /* Smaller font size for mobile devices */
+    }
+  }

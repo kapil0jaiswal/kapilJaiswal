@@ -18,20 +18,33 @@
         opacity: 1;
     }
 }
-
+.btnPrimary{
+  padding: 2%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btnPrimary button{
+  background-color: var(--foreground) !important;
+  border-color: var(--primary-text) !important;
+}
+.btnPrimary button:hover{
+  background-color: var(--background) !important;
+  border-color: var(--primary-text) !important;
+  color:var(--foreground) !important;
+ }
 .devname {
     color: var(--primary-text);
-    /* background-color: var(--background); */
     text-wrap: nowrap;
-    text-align: center;
-    font-size: 2em;
+    font-size: 6vh;
+    padding-left: 10%;
 }
 
 .devdescription {
-    /* background-color: var(--background); */
     color: var(--secondary-text);
     padding-left: -10%;
     animation:   slideIn 2s ease-out forwards; 
+    font-size: 4vh;
 }
 .bg-card{
     background-color: var(--foreground) !important;
