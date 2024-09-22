@@ -3,7 +3,7 @@ import Toggle from "./components/toggle/Toggle.jsx";
 import Home from "./components/home/Home.jsx";
 import AboutMe from "./components/AboutMe/AboutMe.jsx";
 import Technologies from "./components/Technologies.jsx";
-import Footer from "./components/footer/Footer.jsx";
+import Footer from "./components/Footer/Footer.jsx";
 
 function App() {
   const preference = window.matchMedia("(prefers-color-scheme: dark)").matches;
