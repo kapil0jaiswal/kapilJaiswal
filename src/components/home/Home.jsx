@@ -31,7 +31,8 @@ export default function Home() {
               {" "}
             </div>
             <div className="btnPrimary">
-            <a href={resumeLink} download="KapilJaiswal.pdf">   <Button > Download Resume </Button></a>
+            <a href={resumeLink} download="KapilJaiswal.pdf">
+            <Button > Download Resume </Button></a>
             </div>
           </div>
         </Col>
