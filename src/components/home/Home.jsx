@@ -1,7 +1,7 @@
 import React from "react";
 import profile from "../../assets/kapilnew.png";
 import "./Home.css";
-import resumeLink from "../../assets/Resume.pdf";
+import resumeLink from "../../assets/Kapil Jaiswal.pdf";
 import { Button, Col, Container, Row } from "react-bootstrap";
 export default function Home() {
   return (
